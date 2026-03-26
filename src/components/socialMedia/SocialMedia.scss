@@ -67,12 +67,17 @@
 .instagram i {
   background-color: $instagram;
 }
+.whatsapp i {
+  background-color: #25D366; // WhatsApp green
+  color: white;
+}
 
 /* Hover Transition */
 .twitter i:hover,
 .google i:hover,
 .gitlab i:hover,
 .github i:hover,
+.whatsapp i:hover,
 .linkedin i:hover,
 .facebook i:hover,
 .instagram i:hover,
@@ -88,3 +93,5 @@
     text-align: center;
   }
 }
+
+

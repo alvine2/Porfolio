@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1izPtuc4YhasbXVSZ98PvSIBiWYqxJ5MS/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "https://drive.google.com/file/d/1izPtuc4YhasbXVSZ98PvSIBiWYqxJ5MS/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -40,6 +39,7 @@ const socialMediaLinks = {
   facebook: "https://www.facebook.com/kinyera.macus",
   medium: "https://medium.com/@alvinekinyera",
   stackoverflow: "https://stackoverflow.com/",
+  whatsapp: "https://wa.me/256778235910?text=Hello%2C%20I%20want%20to%20work%20with%20you%21",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -48,17 +48,29 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "What I Know",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
-  ],
+  emoji(
+    "⚡ JavaScript, React.js, HTML5, CSS3, Tailwind CSS, Bootstrap, Responsive UI, Frontend Development"
+  ),
+  emoji(
+    "⚡ Progressive Web Apps (PWA), Single Page Applications (SPA), REST APIs, Client-Side Routing"
+  ),
+  emoji(
+    "⚡ Firebase, AWS, DigitalOcean, Node.js, Express.js, MongoDB, MySQL, Git, GitHub"
+  ),
+  emoji(
+    "⚡ IT Support, Hardware & Software Installation, System Troubleshooting, Networking Basics, Linux, Windows"
+  ),
+  emoji(
+    "⚡ Videography, Video Editing, Adobe Premiere Pro, DaVinci Resolve, After Effects, OBS Studio, Live Streaming"
+  ),
+  emoji(
+    "⚡ Agile, Scrum, SDLC, Version Control, CI/CD, Deployment, Cloud Hosting"
+  )
+],
+
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -337,22 +349,46 @@ const achievementSection = {
 // Blogs Section
 
 const blogSection = {
-  title: "Blogs",
+  title: "My services",
   subtitle:
     "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
   displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://medium.com/@alvinekinyera/the-maze-project-blog-post-d6aa921abfe7",
-      title: "The Maze Project",
+      //url: "https://medium.com/@alvinekinyera/the-maze-project-blog-post-d6aa921abfe7",
+      title: "Software Development 💻",
       description:
-        "Our project was created for gaming enthusiasts who enjoy puzzle and maze games. We wanted to provide a challenging yet enjoyable experience for players of all ages."
+        "Building and maintaining software applications, dashboards, and systems tailored to client needs."
     },
     {
-      url: "https://medium.com/@alvinekinyera/what-happens-when-you-type-google-com-in-your-browser-and-press-enter-b05803e2f727",
-      title: "Why REACT is The Best?",
+      //url: "https://medium.com/@alvinekinyera/the-maze-project-blog-post-d6aa921abfe7",
+      title: "IT Support & Technical Assistance 🛠️",
       description:
-        "What happens when you type google.com in your browser and press Enter?"
+        "Computer setup, troubleshooting, system installation, and general IT support."
+    },
+    {
+      //url: "https://medium.com/@alvinekinyera",
+      title: "Community out reach & Consultation 📘",
+      description:
+        "Training and consultation in IT skills, software tools, and digital solutions.",
+    },
+    {
+      //url: "https://medium.com/@alvinekinyera/the-maze-project-blog-post-d6aa921abfe7",
+      title: "Digital Branding & Media Support 🎨",
+      description:
+        "Helping individuals and organizations build a strong online presence using technology and media."
+    },
+    {
+      //url: "https://medium.com/@alvinekinyera/the-maze-project-blog-post-d6aa921abfe7",
+      title: "Tech Training & Consultation 📘",
+      description:
+        "Basic training in IT skills, software usage, and guidance on digital tools and technology."
+    },
+    {
+      //url: "https://medium.com/@alvinekinyera/what-happens-when-you-type-google-com-in-your-browser-and-press-enter-b05803e2f727",
+      title: "Website Development 🌐",
+      description:
+        "Design and development of responsive websites using modern technologies like React, HTML, CSS, and JavaScript."
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -371,8 +407,9 @@ const talkSection = {
       title: "Build Actions For Google Assistant",
       subtitle: "Codelab at GDG DevFesT Kampala 2023",
       slides_url: "https://docs.google.com/presentation/d/1hC8qschDMhtq0rwl7h3TdeXOruk8caGx/edit?usp=sharing&ouid=116090724519779764822&rtpof=true&sd=true",
-    }
+    },
   ],
+  
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -396,6 +433,7 @@ const podcastSection = {
 // Resume Section
 const resumeSection = {
   title: "Resume",
+  resumeLink:"https://drive.google.com/file/d/1izPtuc4YhasbXVSZ98PvSIBiWYqxJ5MS/view?usp=sharing",
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
@@ -407,13 +445,16 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+256778235910 | +256726154776",
-  email_address: "alvinekinyera@gmail.com"
+  email_address: "alvinekinyera@gmail.com",
+  whatsapp_link:
+    "https://wa.me/256778235910?text=Hello%2C%20I%20want%20to%20work%20with%20you%21" // WhatsApp link
 };
+
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "https://twitter.com/AlvineKinyera", //Replace "twitter" with your twitter username without @
+  userName: "AlvineKinyera", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
