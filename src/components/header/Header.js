@@ -28,8 +28,12 @@ function Header() {
     <Headroom>
       <header className={isDark ? "dark-menu header" : "header"}>
         <a href="/" className="logo">
-            <img src={require("../../assets/images/al.png")} alt="Logo" style={{ width: "100px", height: "100px", verticalAlign: "middle" }} />
-         </a>
+          <img
+            src={require("../../assets/images/al.png")}
+            alt="Logo"
+            style={{width: "100px", height: "100px", verticalAlign: "middle"}}
+          />
+        </a>
         <input className="menu-btn" type="checkbox" id="menu-btn" />
         <label
           className="menu-icon"

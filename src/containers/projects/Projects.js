@@ -57,7 +57,11 @@ export default function Projects() {
                 return null;
               }
               return (
-                <GithubRepoCard repo={v} key={v?.node?.id || i} isDark={isDark} />
+                <GithubRepoCard
+                  repo={v}
+                  key={v?.node?.id || i}
+                  isDark={isDark}
+                />
               );
             })}
           </div>

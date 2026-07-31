@@ -4,7 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
-import { sassTrue } from "sass";
+import {sassTrue} from "sass";
 
 // Splash Screen
 
@@ -26,7 +26,8 @@ const greeting = {
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
-  resumeLink: "https://drive.google.com/file/d/1izPtuc4YhasbXVSZ98PvSIBiWYqxJ5MS/view?usp=sharing", // Set to empty to hide the button
+  resumeLink:
+    "https://drive.google.com/file/d/1izPtuc4YhasbXVSZ98PvSIBiWYqxJ5MS/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -40,7 +41,8 @@ const socialMediaLinks = {
   facebook: "https://www.facebook.com/kinyera.macus",
   medium: "https://medium.com/@alvinekinyera",
   stackoverflow: "https://stackoverflow.com/",
-  whatsapp: "https://wa.me/256778235910?text=Hello%2C%20I%20want%20to%20work%20with%20you%21",
+  whatsapp:
+    "https://wa.me/256778235910?text=Hello%2C%20I%20want%20to%20work%20with%20you%21",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -52,26 +54,25 @@ const skillsSection = {
   title: "What I Know",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-  emoji(
-    "⚡ JavaScript, React.js, HTML5, CSS3, Tailwind CSS, Bootstrap, Responsive UI, Frontend Development"
-  ),
-  emoji(
-    "⚡ Progressive Web Apps (PWA), Single Page Applications (SPA), REST APIs, Client-Side Routing"
-  ),
-  emoji(
-    "⚡ Firebase, AWS, DigitalOcean, Node.js, Express.js, MongoDB, MySQL, Git, GitHub"
-  ),
-  emoji(
-    "⚡ IT Support, Hardware & Software Installation, System Troubleshooting, Networking Basics, Linux, Windows"
-  ),
-  emoji(
-    "⚡ Videography, Video Editing, Adobe Premiere Pro, DaVinci Resolve, After Effects, OBS Studio, Live Streaming"
-  ),
-  emoji(
-    "⚡ Agile, Scrum, SDLC, Version Control, CI/CD, Deployment, Cloud Hosting"
-  )
-],
-
+    emoji(
+      "⚡ JavaScript, React.js, HTML5, CSS3, Tailwind CSS, Bootstrap, Responsive UI, Frontend Development"
+    ),
+    emoji(
+      "⚡ Progressive Web Apps (PWA), Single Page Applications (SPA), REST APIs, Client-Side Routing"
+    ),
+    emoji(
+      "⚡ Firebase, AWS, DigitalOcean, Node.js, Express.js, MongoDB, MySQL, Git, GitHub"
+    ),
+    emoji(
+      "⚡ IT Support, Hardware & Software Installation, System Troubleshooting, Networking Basics, Linux, Windows"
+    ),
+    emoji(
+      "⚡ Videography, Video Editing, Adobe Premiere Pro, DaVinci Resolve, After Effects, OBS Studio, Live Streaming"
+    ),
+    emoji(
+      "⚡ Agile, Scrum, SDLC, Version Control, CI/CD, Deployment, Cloud Hosting"
+    )
+  ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
@@ -149,7 +150,7 @@ const educationInfo = {
         "Applied software engineering principles, object-oriented programming, version control with Git, database design, testing, Agile methodologies, and collaborative development practices."
       ]
     },
-    
+
     {
       schoolName: "The International University OF East Africa (IUEA)",
       logo: require("./assets/images/IUEA.png"),
@@ -157,9 +158,9 @@ const educationInfo = {
       duration: "Jan 2024 - Dec 2026",
       desc: "Ranked top 10% in the program. Took courses about IT, Web Security, Operating Systems, ...",
       descBullets: [
-         "Built practical skills in networking, database management, web technologies, cybersecurity, and systems administration through hands-on projects and coursework.",
-         "Collaborated on team-based software projects using Git, APIs, SQL databases, and modern development tools while applying software engineering best practices."
-  ]
+        "Built practical skills in networking, database management, web technologies, cybersecurity, and systems administration through hands-on projects and coursework.",
+        "Collaborated on team-based software projects using Git, APIs, SQL databases, and modern development tools while applying software engineering best practices."
+      ]
     },
     {
       schoolName: "Sai Pali Institute of Technology and management",
@@ -167,8 +168,10 @@ const educationInfo = {
       subHeader: "Diploma in Software Engineering",
       duration: "Nov 2021 - Dec 2023",
       desc: "Built full-stack web applications using HTML, CSS, JavaScript, Python, and modern frameworks",
-      descBullets: ["Applied software engineering best practices including code reviews, testing, and Agile collaboration"]
-    },
+      descBullets: [
+        "Applied software engineering best practices including code reviews, testing, and Agile collaboration"
+      ]
+    }
   ]
 };
 
@@ -209,8 +212,7 @@ const workExperiences = {
       role: "Freelance Software Engineer",
       company: "Upwork",
       companylogo: require("./assets/images/up.png"),
-      desc: "Worked as a freelance software engineer delivering web and software solutions for clients across different industries via Upwork.",
-      
+      desc: "Worked as a freelance software engineer delivering web and software solutions for clients across different industries via Upwork."
     },
     {
       role: "ICT & Innovation Intern",
@@ -231,7 +233,7 @@ const workExperiences = {
       company: "Faibanet UG",
       companylogo: require("./assets/images/fai.png"),
       date: "June 2022 – August 2023",
-      desc: "Contributed to the development and maintenance of software solutions, supporting internal systems and client-facing applications.",
+      desc: "Contributed to the development and maintenance of software solutions, supporting internal systems and client-facing applications."
     },
     {
       role: "Customer Care & Sales Representative",
@@ -296,7 +298,7 @@ const bigProjects = {
     {
       //image: require("./assets/images/maze.png"),
       projectName: "The Maze Game",
-       projectDesc: "3D Maze game",
+      projectDesc: "3D Maze game",
       footerLink: [
         {
           name: "Visit Website",
@@ -315,7 +317,7 @@ const bigProjects = {
         }
       ]
     },
-    
+
     {
       //image: require("./assets/images/maze.png"),
       projectName: "Grade Calculator",
@@ -379,7 +381,10 @@ const achievementSection = {
       image: require("./assets/images/et.png"),
       imageAlt: "BYU Logo",
       footerLink: [
-        {name: "Certification", url: "https://intranet.alxswe.com/certificates/Tzehr5C2RM"},
+        {
+          name: "Certification",
+          url: "https://intranet.alxswe.com/certificates/Tzehr5C2RM"
+        },
         {
           name: "Final Project",
           url: "https://github.com/alvine2/The-Maze"
@@ -391,8 +396,10 @@ const achievementSection = {
       image: require("./assets/images/System Administration by Microsoft and LinkedIn.png"),
       imageAlt: "BYU Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/15g_QKH077TJzspmZb_1-wKK6QOnet6VT/view?usp=sharing"},
-        
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/15g_QKH077TJzspmZb_1-wKK6QOnet6VT/view?usp=sharing"
+        }
       ]
     },
     {
@@ -400,7 +407,10 @@ const achievementSection = {
       image: require("./assets/images/web&.png"),
       imageAlt: "BYU Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1pXECwfr_si82AEAI6g5S_WuyfL3dQNLT/view?usp=sharing"},
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1pXECwfr_si82AEAI6g5S_WuyfL3dQNLT/view?usp=sharing"
+        },
         {
           name: "Final Project",
           url: "https://github.com/Marianaeiterer/handcraftheavel"
@@ -412,8 +422,10 @@ const achievementSection = {
       image: require("./assets/images/Growth.png"),
       imageAlt: "BYU Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1_jzz-T4pGPwwNse4gOtKnMf1rjKfPBK2/view?usp=sharing"},
-        
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1_jzz-T4pGPwwNse4gOtKnMf1rjKfPBK2/view?usp=sharing"
+        }
       ]
     },
     {
@@ -421,12 +433,14 @@ const achievementSection = {
       image: require("./assets/images/dev.png"),
       imageAlt: "BYU Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1_jzz-T4pGPwwNse4gOtKnMf1rjKfPBK2/view?usp=sharing"},
+        {
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1_jzz-T4pGPwwNse4gOtKnMf1rjKfPBK2/view?usp=sharing"
+        },
         {
           name: "Final Project",
           url: "https://github.com/camilamoyac/ENVibe"
         }
-        
       ]
     }
   ],
@@ -457,7 +471,7 @@ const blogSection = {
       //url: "https://medium.com/@alvinekinyera",
       title: "Community out reach & Consultation 📘",
       description:
-        "Training and consultation in IT skills, software tools, and digital solutions.",
+        "Training and consultation in IT skills, software tools, and digital solutions."
     },
     {
       //url: "https://medium.com/@alvinekinyera/the-maze-project-blog-post-d6aa921abfe7",
@@ -493,17 +507,17 @@ const talkSection = {
     {
       title: "Envibe Music",
       subtitle: "A music web application built for streaming and discovery.",
-      slides_url: "https://YOUR_ENVIBE_MUSIC_LIVE_LINK_HERE", // Replace with your live app link
-      // If the template supports github/code links, you can check its original keys, 
+      slides_url: "https://YOUR_ENVIBE_MUSIC_LIVE_LINK_HERE" // Replace with your live app link
+      // If the template supports github/code links, you can check its original keys,
       // but 'slides_url' or 'url' is typically used by templates to open the project in a new tab.
     },
     {
       title: "PoryDrive-2.0",
       subtitle: "Just a car game, with Porygon!",
-      slides_url: "https://YOUR_SECOND_APP_LINK_HERE",
+      slides_url: "https://YOUR_SECOND_APP_LINK_HERE"
     }
   ],
-  
+
   display: false // Set false to hide this section, defaults to true
 };
 
@@ -515,11 +529,11 @@ const podcastSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-     {
+    {
       title: "Tech Podcast Example",
       // YouTube embed link
-      embedUrl: "https://www.youtube.com/embed/oX7OduG1YmI",
-    },
+      embedUrl: "https://www.youtube.com/embed/oX7OduG1YmI"
+    }
   ],
   display: false // Set false to hide this section, defaults to true
 };
@@ -527,7 +541,8 @@ const podcastSection = {
 // Resume Section
 const resumeSection = {
   title: "Resume",
-  resumeLink:"https://drive.google.com/file/d/1izPtuc4YhasbXVSZ98PvSIBiWYqxJ5MS/view?usp=sharing",
+  resumeLink:
+    "https://drive.google.com/file/d/1izPtuc4YhasbXVSZ98PvSIBiWYqxJ5MS/view?usp=sharing",
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
@@ -543,7 +558,6 @@ const contactInfo = {
   whatsapp_link:
     "https://wa.me/256778235910?text=Hello%2C%20I%20want%20to%20work%20with%20you%21" // WhatsApp link
 };
-
 
 // Twitter Section
 

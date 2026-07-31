@@ -12,17 +12,12 @@ export default function Footer() {
         <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
           {emoji("Made with ❤️ by Kinyera Alvine")}
         </p>
-       <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
-  Ready for business or hire. 
-  <a
-    href="https://github.com/alvine2"
-    target="_blank"
-    rel="noreferrer"
-  >
-    Contact me
-  </a>
-</p>
-
+        <p className={isDark ? "dark-mode footer-text" : "footer-text"}>
+          Ready for business or hire.
+          <a href="https://github.com/alvine2" target="_blank" rel="noreferrer">
+            Contact me
+          </a>
+        </p>
       </div>
     </Fade>
   );
