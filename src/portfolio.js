@@ -4,6 +4,7 @@
 
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import { sassTrue } from "sass";
 
 // Splash Screen
 
@@ -141,49 +142,33 @@ const educationInfo = {
       schoolName: "Brigham Young University",
       logo: require("./assets/images/byu.png"),
       subHeader: "Bachelor of Science in Software Development",
-      duration: "JAN 2024 - DEC 2026",
-      desc: "Focused on building strong foundations in software engineering, problem-solving, and modern application development.",
+      duration: "Dec 2024 - Dec 2026",
+      desc: "Comprehensive program focused on software engineering, full-stack application development, database systems, cloud technologies, and industry best practices for designing and delivering scalable software solutions.",
       descBullets: [
-        "Developed and maintained web and software applications using modern programming languages and frameworks",
-        "Gained hands-on experience in algorithms, databases, version control, and collaborative software development"
+        "Designed and developed full-stack web applications using JavaScript, React, Node.js, .NET, SQL, and modern software development frameworks",
+        "Applied software engineering principles, object-oriented programming, version control with Git, database design, testing, Agile methodologies, and collaborative development practices."
       ]
     },
-    {
-      schoolName: "BYUPATHWAY WORLDWIDE",
-      logo: require("./assets/images/path.png"),
-      subHeader: "Certificate in Software Development",
-      duration: "Jan 2024 - Aug 2024",
-      desc: "Faith-centered academic program integrating spiritual growth, leadership, and professional development with technical education.",
-      descBullets: [
-  "Developed software development skills while applying gospel principles such as integrity, accountability, and service",
-  "Participated in devotionals, institute courses, and peer leadership activities to strengthen faith and character",
-  "Balanced rigorous academic work with personal spiritual development and service-oriented learning"
-]
-    },
+    
     {
       schoolName: "The International University OF East Africa (IUEA)",
       logo: require("./assets/images/IUEA.png"),
       subHeader: "Bachelor of Science in Information Technology",
-      duration: "Jan 2024 - DEC 2026",
+      duration: "Jan 2024 - Dec 2026",
       desc: "Ranked top 10% in the program. Took courses about IT, Web Security, Operating Systems, ...",
-      descBullets: ["Worked with Git, databases, APIs, and full-stack development tools in team-based environments"]
+      descBullets: [
+         "Built practical skills in networking, database management, web technologies, cybersecurity, and systems administration through hands-on projects and coursework.",
+         "Collaborated on team-based software projects using Git, APIs, SQL databases, and modern development tools while applying software engineering best practices."
+  ]
     },
     {
       schoolName: "Sai Pali Institute of Technology and management",
       logo: require("./assets/images/SAI.png"),
       subHeader: "Diploma in Software Engineering",
-      duration: "Jan 2020 - DEC 2022",
+      duration: "Nov 2021 - Dec 2023",
       desc: "Built full-stack web applications using HTML, CSS, JavaScript, Python, and modern frameworks",
       descBullets: ["Applied software engineering best practices including code reviews, testing, and Agile collaboration"]
     },
-    {
-      schoolName: "ALX Africa",
-      logo: require("./assets/images/alx.png"),
-      subHeader: "Certificate in Full Stack Development",
-      duration: "Jan 2020 - DEC 2024",
-      desc: "An intensive, project-based bootcamp focused on building scalable full-stack applications and strong problem-solving skills.",
-      descBullets: ["Applied software engineering best practices including code reviews, testing, and Agile collaboration"]
-    }
   ]
 };
 
@@ -205,7 +190,7 @@ const techStack = {
       progressPercentage: "60%"
     }
   ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -214,35 +199,58 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Junior Software Engineer",
-      company: "Faibanet UG",
-      companylogo: require("./assets/images/fai.png"),
-      date: "June 2023 – march 2024",
-      desc: "Contributed to the development and maintenance of software solutions, supporting internal systems and client-facing applications.",
-      descBullets: [
-        "Assisted in developing, testing, and debugging web and software applications",
-        "Worked with databases, APIs, and version control systems in a team environment"
-      ]
+      role: "IT-Domestic Taxes Department",
+      company: "URA",
+      companylogo: require("./assets/images/URA-logo.png"),
+      date: "June 2026 – Present",
+      desc: " Administered Active Directory accounts and configured Windows and Microsoft 365 environments."
     },
-    
     {
       role: "Freelance Software Engineer",
       company: "Upwork",
       companylogo: require("./assets/images/up.png"),
-      date: "October 2024 – Current",
       desc: "Worked as a freelance software engineer delivering web and software solutions for clients across different industries via Upwork.",
-      descBullets: [
-        "Designed, developed, and deployed web applications based on client requirements",
-        "Built frontend and backend features using modern programming languages and frameworks",
-        "Integrated APIs, databases, and third-party services into client applications",
-        "Collaborated remotely with clients, gathering requirements and delivering solutions on time"
-      ]
+      
     },
     {
-      role: "Freelancer",
+      role: "ICT & Innovation Intern",
+      company: "URSB",
+      companylogo: require("./assets/images/ur.png"),
+      date: " April 2026 – June 2026",
+      desc: "Managed hardware and software configuration, ensuring optimal performance and user satisfaction."
+    },
+    {
+      role: "Researcher",
+      company: "Gallup",
+      companylogo: require("./assets/images/gal.png"),
+      date: "Feb 2024 – May 2024",
+      desc: "Conducted face-to-face interviews with marginalized communities across East Africa to gather high-quality survey data."
+    },
+    {
+      role: "Junior Software Engineer",
+      company: "Faibanet UG",
+      companylogo: require("./assets/images/fai.png"),
+      date: "June 2022 – August 2023",
+      desc: "Contributed to the development and maintenance of software solutions, supporting internal systems and client-facing applications.",
+    },
+    {
+      role: "Customer Care & Sales Representative",
+      company: "Jumia Uganda",
+      companylogo: require("./assets/images/jumia.png"),
+      date: "March 2020 – Nov 2021",
+      desc: "Managed end-to-end support and sales queries using CRM ticketing systems."
+    },
+    {
+      role: "IT Support & System Maintenance",
+      company: "HSEF",
+      companylogo: require("./assets/images/hsef.png"),
+      date: "July 2024 – Present",
+      desc: " Provided comprehensive IT support and system maintenance To BYUPATHWAY Students."
+    },
+    {
+      role: "Freelancer-Backend",
       company: "Replit",
       companylogo: require("./assets/images/Rep.png"),
-      date: "oct 2023 – Sep 2025",
       desc: "Performed code reviews, bug fixes, and basic system optimization tasks"
     }
   ]
@@ -263,9 +271,9 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/fai.png"),
+      //image: require("./assets/images/fai.png"),
       projectName: "Faibanet UG",
-      projectDesc: "Worked on software solutions supporting Faibanet Uganda’s internal operations, including system maintenance, feature development, and performance improvements.",
+      projectDesc: "ISP-faiba website",
       footerLink: [
         {
           name: "Visit Website",
@@ -275,13 +283,58 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/maze.png"),
-      projectName: "The Maze",
-      projectDesc: "The Maze is a 3D Maze game that uses ray casting to render a 2D map into a 3D navigable world! The Maze was written was written in C ussing SDL2 library. Deveploment was performed using Ubuntu 14.04 LTS - gcc (Ubuntu 4.8.4-2ubuntu1~14.04) 4.8.4",
+      //image: require("./assets/images/maze.png"),
+      projectName: "ENVIBE",
+      projectDesc: "Digital music and reading environment ",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://lively-medovik-d93bb9.netlify.app/"
+        }
+      ]
+    },
+    {
+      //image: require("./assets/images/maze.png"),
+      projectName: "The Maze Game",
+       projectDesc: "3D Maze game",
       footerLink: [
         {
           name: "Visit Website",
           url: "https://github.com/alvine2/The-Maze"
+        }
+      ]
+    },
+    {
+      //image: require("./assets/images/maze.png"),
+      projectName: "The Griffins Electronic Store",
+      projectDesc: "E-commerce website for electronics",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://glistening-daffodil-cf3549.netlify.app/"
+        }
+      ]
+    },
+    
+    {
+      //image: require("./assets/images/maze.png"),
+      projectName: "Grade Calculator",
+      //projectDesc: "The Maze is a 3D Maze game that uses ray casting to render a 2D map into a 3D navigable world! The Maze was written was written in C ussing SDL2 library. Deveploment was performed using Ubuntu 14.04 LTS - gcc (Ubuntu 4.8.4-2ubuntu1~14.04) 4.8.4",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://github.com/alvine2/GradeCalculator"
+        }
+      ]
+    },
+    {
+      //image: require("./assets/images/maze.png"),
+      projectName: "School Management System",
+      //projectDesc: "The Maze is a 3D Maze game that uses ray casting to render a 2D map into a 3D navigable world! The Maze was written was written in C ussing SDL2 library. Deveploment was performed using Ubuntu 14.04 LTS - gcc (Ubuntu 4.8.4-2ubuntu1~14.04) 4.8.4",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://github.com/alvine2/alvine-international"
         }
       ]
     }
@@ -299,47 +352,81 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "ALX Code-In Finalist",
-      subtitle:
-        "Kinyera Alvine was recognized as a standout participant in ALX, becoming one of the first Ugandan students to be selected as a finalist for exceptional contributions to open-source software and project-based learning.",
-      image: require("./assets/images/lx.png"),
-      imageAlt: "Google Code-In Logo",
+      title: "Communicating with Confidence",
+      image: require("./assets/images/confidence.png"),
+      imageAlt: "Google",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/1Tafgwyp8CuobFKgYcsa7JtKkyYTqz3Rj/view?usp=sharing"
-        },
-        {
-          name: "ALX Code-in Blog",
-          url: "https://medium.com/@alvinekinyera/the-maze-project-blog-post-d6aa921abfe7"
+          url: "https://drive.google.com/file/d/1NEvuAliDoRSx32gV9UjV462ZtC7ZGP_X/view?usp=sharing"
         }
       ]
     },
     {
-      title: "Replit Ai Action",
-      subtitle:
-        "Developed a Ai Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/Rep.png"),
+      title: "IT Service Desk Service Management",
+      image: require("./assets/images/IT Service Desk Service Management.png"),
       imageAlt: " Action Logo",
       footerLink: [
         {
-          name: "View Assistant Action",
-          url: "https://replit.com/ai"
+          name: "Certification",
+          url: "https://drive.google.com/file/d/1YRya94hosql49Z8CSWukt3E5sfCCXQGd/view?usp=sharing"
         }
       ]
     },
 
     {
-      title: "BYU I",
-      subtitle: "Web App Development",
-      image: require("./assets/images/byu.png"),
+      title: "Alx Backend Specialization",
+      image: require("./assets/images/et.png"),
       imageAlt: "BYU Logo",
       footerLink: [
-        {name: "Certification", url: "https://drive.google.com/file/d/1Tafgwyp8CuobFKgYcsa7JtKkyYTqz3Rj/view?usp=sharing"},
+        {name: "Certification", url: "https://intranet.alxswe.com/certificates/Tzehr5C2RM"},
         {
           name: "Final Project",
-          url: "https://github.com/alvine2/CSE340-project"
+          url: "https://github.com/alvine2/The-Maze"
         }
+      ]
+    },
+    {
+      title: "System Administration by Microsoft and LinkedIn",
+      image: require("./assets/images/System Administration by Microsoft and LinkedIn.png"),
+      imageAlt: "BYU Logo",
+      footerLink: [
+        {name: "Certification", url: "https://drive.google.com/file/d/15g_QKH077TJzspmZb_1-wKK6QOnet6VT/view?usp=sharing"},
+        
+      ]
+    },
+    {
+      title: "Web & Computer Programming BYUI",
+      image: require("./assets/images/web&.png"),
+      imageAlt: "BYU Logo",
+      footerLink: [
+        {name: "Certification", url: "https://drive.google.com/file/d/1pXECwfr_si82AEAI6g5S_WuyfL3dQNLT/view?usp=sharing"},
+        {
+          name: "Final Project",
+          url: "https://github.com/Marianaeiterer/handcraftheavel"
+        }
+      ]
+    },
+    {
+      title: "Leading with a Growth Mindset",
+      image: require("./assets/images/Growth.png"),
+      imageAlt: "BYU Logo",
+      footerLink: [
+        {name: "Certification", url: "https://drive.google.com/file/d/1_jzz-T4pGPwwNse4gOtKnMf1rjKfPBK2/view?usp=sharing"},
+        
+      ]
+    },
+    {
+      title: "Web Development BYUI",
+      image: require("./assets/images/dev.png"),
+      imageAlt: "BYU Logo",
+      footerLink: [
+        {name: "Certification", url: "https://drive.google.com/file/d/1_jzz-T4pGPwwNse4gOtKnMf1rjKfPBK2/view?usp=sharing"},
+        {
+          name: "Final Project",
+          url: "https://github.com/camilamoyac/ENVibe"
+        }
+        
       ]
     }
   ],
@@ -397,20 +484,27 @@ const blogSection = {
 // Talks Sections
 
 const talkSection = {
-  title: "TALKS",
+  title: "My Apps and Games",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "Feel free to play my games and explore my working hosted applications 🚀"
   ),
 
   talks: [
     {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFesT Kampala 2023",
-      slides_url: "https://docs.google.com/presentation/d/1hC8qschDMhtq0rwl7h3TdeXOruk8caGx/edit?usp=sharing&ouid=116090724519779764822&rtpof=true&sd=true",
+      title: "Envibe Music",
+      subtitle: "A music web application built for streaming and discovery.",
+      slides_url: "https://YOUR_ENVIBE_MUSIC_LIVE_LINK_HERE", // Replace with your live app link
+      // If the template supports github/code links, you can check its original keys, 
+      // but 'slides_url' or 'url' is typically used by templates to open the project in a new tab.
     },
+    {
+      title: "PoryDrive-2.0",
+      subtitle: "Just a car game, with Porygon!",
+      slides_url: "https://YOUR_SECOND_APP_LINK_HERE",
+    }
   ],
   
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section

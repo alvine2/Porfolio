@@ -3,25 +3,25 @@
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 200px; /* Reduced image width */
 }
 .card-title {
   color: $titleColor;
-  font-size: 22px;
-  line-height: 24px;
+  font-size: 18px; /* Smaller title */
+  line-height: 20px;
   font-weight: 700;
-  margin: 15px 0 0 0;
+  margin: 10px 0 0 0;
 }
 .card-subtitle {
   color: $cardSubtitle;
-  font-size: 17px;
-  line-height: 1.5rem;
+  font-size: 13px; /* Smaller description text */
+  line-height: 1.3rem;
 }
 .project-card {
   display: flex;
   flex-direction: column;
   background-color: $lightBackground2;
-  padding: 1.5rem;
+  padding: 1rem; /* Reduced internal padding */
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   justify-content: center;
@@ -51,7 +51,7 @@
 }
 .project-image {
   position: relative;
-  height: 250px;
+  height: 130px; /* Reduced container height for image */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -60,8 +60,8 @@
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller min-width for grid items */
+  gap: 0.75rem 0.75rem; /* Tighter gap */
 }
 
 .project-card-footer span.project-tag {
@@ -71,20 +71,20 @@
   align-items: center;
   border-radius: 4px;
   display: inline-flex;
-  font-size: 0.75rem;
-  height: 2em;
+  font-size: 0.7rem;
+  height: 1.75em;
   justify-content: center;
   white-space: nowrap;
-  line-height: 1.5;
-  margin: 0 0.5rem 0.5rem 0;
-  padding: 0 0.75em;
+  line-height: 1.4;
+  margin: 0 0.3rem 0.3rem 0;
+  padding: 0 0.5em;
   cursor: pointer;
   transition: 0.2s ease-in;
 }
 
 @media (max-width: 768px) {
   .project-subtitle {
-    font-size: 16px;
+    font-size: 12px;
     text-align: center;
   }
 }

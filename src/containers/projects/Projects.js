@@ -11,7 +11,6 @@ export default function Projects() {
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
   const [repo, setrepo] = useState([]);
-  // todo: remove useContex because is not supported
   const {isDark} = useContext(StyleContext);
 
   useEffect(() => {
@@ -24,7 +23,9 @@ export default function Projects() {
           throw result;
         })
         .then(response => {
-          setrepoFunction(response.data.user.pinnedItems.edges);
+          // Added safe optional chaining so it doesn't crash if properties are missing
+          const edges = response?.data?.user?.pinnedItems?.edges || [];
+          setrepoFunction(edges);
         })
         .catch(function (error) {
           console.error(
@@ -53,9 +54,10 @@ export default function Projects() {
                 console.error(
                   `Github Object for repository number : ${i} is undefined`
                 );
+                return null;
               }
               return (
-                <GithubRepoCard repo={v} key={v.node.id} isDark={isDark} />
+                <GithubRepoCard repo={v} key={v?.node?.id || i} isDark={isDark} />
               );
             })}
           </div>

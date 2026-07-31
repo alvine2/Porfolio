@@ -1,5 +1,5 @@
-import React, {useState, useEffect, lazy, Suspense} from "react";
-import {openSource} from "../../portfolio";
+import React, { useState, useEffect, lazy, Suspense } from "react";
+import { openSource } from "../../portfolio";
 import Contact from "../contact/Contact";
 import Loading from "../loading/Loading";
 
@@ -7,46 +7,52 @@ const renderLoader = () => <Loading />;
 const GithubProfileCard = lazy(() =>
   import("../../components/githubProfileCard/GithubProfileCard")
 );
+
 export default function Profile() {
-  const [prof, setrepo] = useState([]);
-  function setProfileFunction(array) {
-    setrepo(array);
-  }
+  const [prof, setProfile] = useState(null);
 
   useEffect(() => {
-    if (openSource.showGithubProfile === "true") {
-      const getProfileData = () => {
-        fetch("/profile.json")
-          .then(result => {
-            if (result.ok) {
-              return result.json();
-            }
-          })
-          .then(response => {
-            setProfileFunction(response.data.user);
-          })
-          .catch(function (error) {
-            console.error(
-              `${error} (because of this error GitHub contact section could not be displayed. Contact section has reverted to default)`
-            );
-            setProfileFunction("Error");
-            openSource.showGithubProfile = "false";
-          });
-      };
-      getProfileData();
+    // 1. Changed "true" to boolean true
+    if (openSource.showGithubProfile === true) {
+      fetch("/profile.json")
+        .then(result => {
+          if (result.ok) {
+            return result.json();
+          }
+          throw new Error("Network response was not ok");
+        })
+        .then(response => {
+          setProfile(response.data.user);
+        })
+        .catch(error => {
+          console.error(
+            `${error} (because of this error GitHub contact section could not be displayed. Contact section has reverted to default)`
+          );
+          setProfile("Error");
+          openSource.showGithubProfile = false; // 2. Changed to boolean false
+        });
     }
   }, []);
-  if (
+
+  // 3. Changed "true" to boolean true here as well
+  const shouldShowGithub = 
     openSource.display &&
-    openSource.showGithubProfile === "true" &&
-    !(typeof prof === "string" || prof instanceof String)
-  ) {
+    openSource.showGithubProfile === true &&
+    prof &&
+    typeof prof === "object";
+
+  if (shouldShowGithub) {
     return (
       <Suspense fallback={renderLoader()}>
         <GithubProfileCard prof={prof} key={prof.id} />
       </Suspense>
     );
-  } else {
-    return <Contact />;
   }
+
+  // 4. Changed "true" to boolean true here too
+  if (!prof && openSource.showGithubProfile === true) {
+    return renderLoader();
+  }
+
+  return <Contact />;
 }
